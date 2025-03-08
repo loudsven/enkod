@@ -1,3 +1,10 @@
 .app-main {
   padding: 0 var(--padding-x);
 }
+
+.app-main__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2.25rem 0 1rem;
+}

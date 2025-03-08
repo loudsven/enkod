@@ -1,0 +1,24 @@
+<ul class="cities-tiles">
+  @for (city of cities; track city.id) {
+  <li class="cities-tiles__item">
+    <img
+      class="cities-tiles__item-image"
+      [src]="city.image"
+      alt="{{ city.name }}"
+    />
+    <div class="cities-tiles__item-content">
+      <header class="cities-tiles__item-header">
+        <h2 class="cities-tiles__item-title">{{ city.name }}</h2>
+        <input
+          type="checkbox"
+          [checked]="city.favorite"
+          (change)="onToggleFavorite(city.id)"
+        />
+      </header>
+      <p class="cities-tiles__item-description">
+        {{ city.description }}
+      </p>
+    </div>
+  </li>
+  }
+</ul>
