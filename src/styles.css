@@ -7,7 +7,7 @@
 }
 
 :root {
-  --font-family: Arial, "Roboto", sans-serif;
+  --font-family: "Roboto", sans-serif;
   --grey-dark: #434652;
   --grey: #757986;
   --grey-light: #d3d4db;
@@ -17,4 +17,8 @@
   --text-primary: var(--grey-dark);
   --text-secondary: var(--grey);
   --border-color: var(--grey-light);
+
+  font-family: var(--font-family);
+
+  --padding-x: 3.75rem;
 }

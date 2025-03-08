@@ -1,0 +1,10 @@
+.app-header {
+  background-color: var(--grey-super-light);
+  padding: 2.5rem var(--padding-x);
+}
+
+.app-header__title {
+  font-size: 1.75rem;
+  color: var(--text-primary);
+  font-weight: 500;
+}
