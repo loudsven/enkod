@@ -6,7 +6,7 @@
       (onTabChange)="changeViewMode($event)"
       [current]="viewMode.value"
     />
-    <a routerLink="/add">Добавить</a>
+    <a class="app-main__add-link" routerLink="/add">Создать</a>
   </header>
   @if (viewMode.value === 'list') {
   <app-list [cities]="cities" [onToggleFavorite]="toggleFavorite" />

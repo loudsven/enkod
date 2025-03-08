@@ -1,4 +1,42 @@
 <app-header title="Создание города" />
 <main class="app-main">
   <a class="main-content__back-link" routerLink="/">Назад</a>
+  <form class="add-city-form" [formGroup]="cityForm" (ngSubmit)="onSubmit()">
+    <div class="add-city-form__field">
+      <label class="add-city-form__label" for="name">Название города</label>
+      <input
+        class="add-city-form__input"
+        id="name"
+        type="text"
+        formControlName="name"
+      />
+    </div>
+    <div class="add-city-form__field">
+      <label class="add-city-form__label" for="description"
+        >Описание города</label
+      >
+      <textarea
+        class="add-city-form__input"
+        rows="4"
+        formControlName="description"
+        id="description"
+      ></textarea>
+    </div>
+    <div class="add-city-form__field">
+      <label class="add-city-form__label" for="image">Ссылка на картинку</label>
+      <input
+        class="add-city-form__input"
+        id="image"
+        type="text"
+        formControlName="image"
+      />
+    </div>
+    <button
+      [disabled]="cityForm.invalid"
+      class="add-city-form__submit-button"
+      type="submit"
+    >
+      Создать
+    </button>
+  </form>
 </main>

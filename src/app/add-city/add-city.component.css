@@ -21,4 +21,55 @@
 
 .app-main {
   padding: 2.25rem var(--padding-x);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1.75rem;
+}
+
+.add-city-form {
+  max-width: 534px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1.25rem;
+}
+
+.add-city-form__field {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.add-city-form__label {
+  font-size: 0.875rem;
+}
+
+.add-city-form__input {
+  padding: 0.5rem;
+  border-radius: 2px;
+  border: 1px solid var(--border-color);
+  font-family: var(--font-family);
+  color: var(--text-primary);
+}
+
+.add-city-form__submit-button {
+  color: white;
+  background-color: var(--celadon);
+  border-radius: 2px;
+  padding: 0.5rem 1rem;
+  border: none;
+  font-weight: 500;
+  font-size: 0.875rem;
+  transition: all 0.15s ease-in-out;
+
+  &:hover {
+    background-color: #45bcce;
+  }
+
+  &:disabled {
+    background-color: var(--grey-light);
+  }
 }

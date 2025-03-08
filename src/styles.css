@@ -23,6 +23,10 @@
   --padding-x: 3.75rem;
 }
 
+body {
+  color: var(--text-primary);
+}
+
 a {
   text-decoration: none;
 }
