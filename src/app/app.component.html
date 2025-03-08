@@ -1,13 +1,14 @@
 <app-header />
 <main class="app-main">
   <header class="app-main__header">
-    <div class="app-main__header-tabs">
-      <button (click)="changeViewMode('list')">Список</button>
-      <button (click)="changeViewMode('tile')">Плитка</button>
-    </div>
+    <app-tabs
+      [tabs]="viewModes"
+      (onTabChange)="changeViewMode($event)"
+      [current]="viewMode.value"
+    />
     <button class="app-main__header-create">Создать</button>
   </header>
-  @if (viewMode === 'list') {
+  @if (viewMode.value === 'list') {
   <app-list [cities]="cities" [onToggleFavorite]="toggleFavorite" />
   } @else {
   <app-tiles [cities]="cities" [onToggleFavorite]="toggleFavorite" />

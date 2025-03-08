@@ -1,0 +1,10 @@
+@for(tab of tabs; track tab.value) {
+<button
+  class="app-tabs__tab {{
+    tab.value === current ? 'app-tabs__tab--active' : ''
+  }}"
+  (click)="onTabClick(tab.value)"
+>
+  {{ tab.label }}
+</button>
+}
