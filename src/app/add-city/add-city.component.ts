@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { RouterModule } from '@angular/router';
+import { Router, RouterModule } from '@angular/router';
 import { HeaderComponent } from '../header/header.component';
 import {
   ReactiveFormsModule,
@@ -7,6 +7,8 @@ import {
   FormControl,
   Validators,
 } from '@angular/forms';
+import { CityService } from '../services/city.service';
+import { City } from '../models/city.model';
 
 @Component({
   selector: 'app-add-city',
@@ -21,7 +23,10 @@ export class AddCityComponent {
     description: new FormControl('', [Validators.required]),
   });
 
+  constructor(private cityService: CityService, private router: Router) {}
+
   onSubmit() {
-    console.log(this.cityForm.value);
+    this.cityService.addCity(this.cityForm.value as City);
+    this.router.navigate(['/']);
   }
 }

@@ -20,4 +20,9 @@ export class CityService {
       this.citiesSubject.next([...cities]);
     }
   }
+
+  addCity(newCity: City): void {
+    const cities = this.citiesSubject.value;
+    this.citiesSubject.next([...cities, { ...newCity, id: cities.length + 1 }]);
+  }
 }
