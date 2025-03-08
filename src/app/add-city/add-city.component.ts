@@ -30,6 +30,7 @@ export class AddCityComponent {
   constructor(private cityService: CityService, private router: Router) {}
 
   onSubmit() {
+    this.submitted = true;
     if (this.cityForm.valid) {
       this.cityService.addCity(this.cityForm.value as City);
       this.router.navigate(['/']);
