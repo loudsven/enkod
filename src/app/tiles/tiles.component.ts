@@ -1,9 +1,10 @@
 import { Component, Input } from '@angular/core';
 import { City } from '../models/city.model';
+import { FavoriteCheckboxComponent } from '../favorite-checkbox/favorite-checkbox.component';
 
 @Component({
   selector: 'app-tiles',
-  imports: [],
+  imports: [FavoriteCheckboxComponent],
   templateUrl: './tiles.component.html',
   styleUrl: './tiles.component.css',
 })

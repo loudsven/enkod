@@ -28,6 +28,7 @@
 .cities-tiles__item-header {
   display: flex;
   gap: 1rem;
+  align-items: center;
 }
 
 .cities-tiles__item-content {

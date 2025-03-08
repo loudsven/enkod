@@ -1,0 +1,22 @@
+.favorite-checkbox {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.favorite-checkbox:hover .favorite-checkbox__icon {
+}
+
+.favorite-checkbox__input {
+  display: none;
+}
+
+.favorite-checkbox__input:checked + .favorite-checkbox__icon path {
+  fill: currentColor;
+}
+
+.favorite-checkbox__icon {
+  display: inline-block;
+  width: 1rem;
+  height: 1rem;
+  transition: transform 0.3s ease, fill 0.3s ease;
+}

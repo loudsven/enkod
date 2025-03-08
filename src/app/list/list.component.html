@@ -11,10 +11,9 @@
     <div class="cities-list__item-content">
       <header class="cities-list__item-header">
         <h2 class="cities-list__item-title">{{ city.name }}</h2>
-        <input
-          type="checkbox"
+        <app-favorite-checkbox
           [checked]="city.favorite"
-          (change)="onToggleFavorite(city.id)"
+          (checkedChange)="onToggleFavorite(city.id)"
         />
       </header>
       <p class="cities-list__item-description">

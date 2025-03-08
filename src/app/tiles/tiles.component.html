@@ -9,10 +9,9 @@
     <div class="cities-tiles__item-content">
       <header class="cities-tiles__item-header">
         <h2 class="cities-tiles__item-title">{{ city.name }}</h2>
-        <input
-          type="checkbox"
+        <app-favorite-checkbox
           [checked]="city.favorite"
-          (change)="onToggleFavorite(city.id)"
+          (checkedChange)="onToggleFavorite(city.id)"
         />
       </header>
       <p class="cities-tiles__item-description">
