@@ -1,1 +1,20 @@
-/* You can add global styles to this file, and also import other style files */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --font-family: Arial, "Roboto", sans-serif;
+  --grey-dark: #434652;
+  --grey: #757986;
+  --grey-light: #d3d4db;
+  --grey-super-light: #f2f5fa;
+  --celadon: #21a5b9;
+
+  --text-primary: var(--grey-dark);
+  --text-secondary: var(--grey);
+  --border-color: var(--grey-light);
+}
