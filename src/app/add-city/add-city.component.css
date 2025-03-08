@@ -73,3 +73,7 @@
     background-color: var(--grey-light);
   }
 }
+
+.add-city-form__error {
+  color: #e57373;
+}
