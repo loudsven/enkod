@@ -17,16 +17,22 @@ import { City } from '../models/city.model';
   styleUrl: './add-city.component.css',
 })
 export class AddCityComponent {
+  submitted = false;
   cityForm = new FormGroup({
     name: new FormControl('', [Validators.required]),
-    image: new FormControl('', [Validators.required]),
+    image: new FormControl('', [
+      Validators.required,
+      Validators.pattern('https?://.+'),
+    ]),
     description: new FormControl('', [Validators.required]),
   });
 
   constructor(private cityService: CityService, private router: Router) {}
 
   onSubmit() {
-    this.cityService.addCity(this.cityForm.value as City);
-    this.router.navigate(['/']);
+    if (this.cityForm.valid) {
+      this.cityService.addCity(this.cityForm.value as City);
+      this.router.navigate(['/']);
+    }
   }
 }

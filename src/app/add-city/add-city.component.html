@@ -10,6 +10,10 @@
         type="text"
         formControlName="name"
       />
+      @if (cityForm.controls['name'].dirty &&
+      cityForm.controls['name'].hasError('required')) {
+      <small>Введите название</small>
+      }
     </div>
     <div class="add-city-form__field">
       <label class="add-city-form__label" for="description"
@@ -21,22 +25,26 @@
         formControlName="description"
         id="description"
       ></textarea>
+      @if (cityForm.controls['description'].dirty &&
+      cityForm.controls['description'].hasError('required')) {
+      <small>Введите описание</small>
+      }
     </div>
     <div class="add-city-form__field">
       <label class="add-city-form__label" for="image">Ссылка на картинку</label>
       <input
         class="add-city-form__input"
         id="image"
-        type="text"
+        type="url"
         formControlName="image"
       />
+      @if (cityForm.controls['image'].dirty &&
+      cityForm.controls['image'].hasError('required')) {
+      <small>Введите ссылку</small>
+      } @if (cityForm.controls['image'].hasError('pattern')) {
+      <small>Введите корректную ссылку</small>
+      }
     </div>
-    <button
-      [disabled]="cityForm.invalid"
-      class="add-city-form__submit-button"
-      type="submit"
-    >
-      Создать
-    </button>
+    <button class="add-city-form__submit-button" type="submit">Создать</button>
   </form>
 </main>
