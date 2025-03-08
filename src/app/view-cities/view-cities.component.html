@@ -1,0 +1,16 @@
+<app-header title="Список городов" />
+<main class="app-main">
+  <header class="app-main__header">
+    <app-tabs
+      [tabs]="viewModes"
+      (onTabChange)="changeViewMode($event)"
+      [current]="viewMode.value"
+    />
+    <a routerLink="/add">Добавить</a>
+  </header>
+  @if (viewMode.value === 'list') {
+  <app-list [cities]="cities" [onToggleFavorite]="toggleFavorite" />
+  } @else {
+  <app-tiles [cities]="cities" [onToggleFavorite]="toggleFavorite" />
+  }
+</main>

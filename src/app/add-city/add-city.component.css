@@ -1,0 +1,24 @@
+.app-header {
+  background-color: var(--grey-super-light);
+  padding: 2.5rem var(--padding-x);
+}
+
+.app-header__title {
+  font-size: 1.75rem;
+  color: var(--text-primary);
+  font-weight: 500;
+}
+
+.main-content__back-link {
+  display: inline-flex;
+  font-size: 0.8125rem;
+  font-weight: 400;
+  color: var(--text-primary);
+  padding: 0.5rem 1rem;
+  border: 1px solid var(--border-color);
+  border-radius: 2px;
+}
+
+.app-main {
+  padding: 2.25rem var(--padding-x);
+}

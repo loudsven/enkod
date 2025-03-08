@@ -22,3 +22,7 @@
 
   --padding-x: 3.75rem;
 }
+
+a {
+  text-decoration: none;
+}
