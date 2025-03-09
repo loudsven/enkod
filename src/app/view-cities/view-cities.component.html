@@ -3,7 +3,7 @@
   <header class="app-main__header">
     <app-tabs
       [tabs]="viewModes"
-      (onTabChange)="changeViewMode($event)"
+      (tabChanged)="changeViewMode($event)"
       [current]="viewMode.value"
     />
     <a class="app-main__add-link" routerLink="/add">Создать</a>
