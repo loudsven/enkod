@@ -1,10 +1,10 @@
-import { Component, EventEmitter, Input, input, Output } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 
 @Component({
-  selector: 'app-favorite-checkbox',
-  imports: [],
-  templateUrl: './favorite-checkbox.component.html',
-  styleUrl: './favorite-checkbox.component.css',
+	selector: 'app-favorite-checkbox',
+	imports: [],
+	templateUrl: './favorite-checkbox.component.html',
+	styleUrl: './favorite-checkbox.component.css',
 })
 export class FavoriteCheckboxComponent {
   @Input() checked = false;
@@ -12,7 +12,7 @@ export class FavoriteCheckboxComponent {
   @Output() checkedChange = new EventEmitter<boolean>();
 
   onCheckboxChange(event: Event): void {
-    this.checked = (event.target as HTMLInputElement).checked;
-    this.checkedChange.emit(this.checked);
+  	this.checked = (event.target as HTMLInputElement).checked;
+  	this.checkedChange.emit(this.checked);
   }
 }

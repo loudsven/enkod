@@ -3,21 +3,21 @@ import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { AddCityComponent } from './add-city.component';
 
 describe('AddCityComponent', () => {
-  let component: AddCityComponent;
-  let fixture: ComponentFixture<AddCityComponent>;
+	let component: AddCityComponent;
+	let fixture: ComponentFixture<AddCityComponent>;
 
-  beforeEach(async () => {
-    await TestBed.configureTestingModule({
-      imports: [AddCityComponent]
-    })
-    .compileComponents();
+	beforeEach(async () => {
+		await TestBed.configureTestingModule({
+			imports: [AddCityComponent]
+		})
+			.compileComponents();
 
-    fixture = TestBed.createComponent(AddCityComponent);
-    component = fixture.componentInstance;
-    fixture.detectChanges();
-  });
+		fixture = TestBed.createComponent(AddCityComponent);
+		component = fixture.componentInstance;
+		fixture.detectChanges();
+	});
 
-  it('should create', () => {
-    expect(component).toBeTruthy();
-  });
+	it('should create', () => {
+		expect(component).toBeTruthy();
+	});
 });

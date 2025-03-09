@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { HeaderComponent } from '../header/header.component';
 import { ListComponent } from '../list/list.component';
 import { TilesComponent } from '../tiles/tiles.component';
@@ -13,38 +13,38 @@ interface ViewMode {
 }
 
 const ViewModes: ViewMode[] = [
-  { value: 'list', label: 'Список' },
-  { value: 'tile', label: 'Плитка' },
+	{ value: 'list', label: 'Список' },
+	{ value: 'tile', label: 'Плитка' },
 ];
 @Component({
-  selector: 'app-view-cities',
-  imports: [
-    RouterModule,
-    HeaderComponent,
-    ListComponent,
-    TilesComponent,
-    TabsComponent,
-  ],
-  templateUrl: './view-cities.component.html',
-  styleUrl: './view-cities.component.css',
+	selector: 'app-view-cities',
+	imports: [
+		RouterModule,
+		HeaderComponent,
+		ListComponent,
+		TilesComponent,
+		TabsComponent,
+	],
+	templateUrl: './view-cities.component.html',
+	styleUrl: './view-cities.component.css',
 })
-export class ViewCitiesComponent {
-  cities: City[] = [];
-  viewMode: ViewMode = ViewModes[0];
-  viewModes: ViewMode[] = ViewModes;
+export class ViewCitiesComponent implements OnInit {
+	cities: City[] = [];
+	viewMode: ViewMode = ViewModes[0];
+	viewModes: ViewMode[] = ViewModes;
 
-  constructor(private cityService: CityService) {}
+	constructor(private cityService: CityService) {}
 
-  ngOnInit() {
-    this.cityService.cities$.subscribe((cities) => {
-      this.cities = cities;
-    });
-  }
-  toggleFavorite = (cityId: number): void => {
-    this.cityService.toggleFavorite(cityId);
-  };
+	ngOnInit() {
+		this.cityService.cities$.subscribe((cities) => {
+			this.cities = cities;
+		});
+	}
+	toggleFavorite = (cityId: number): void => {
+		this.cityService.toggleFavorite(cityId);
+	};
 
-  changeViewMode = (value: string): void => {
-    this.viewMode = this.viewModes.find((mode) => mode.value === value)!;
-  };
+	changeViewMode = (value: string): void => {
+		this.viewMode = this.viewModes.find((mode) => mode.value === value)!;
+	};
 }
