@@ -55,8 +55,8 @@
         formControlName="image"
       />@if (cityForm.controls['image'].hasError('pattern')) {
       <small class="add-city-form__error">Введите корректную ссылку</small>
-      } @else if (submitted || cityForm.controls.image.dirty ||
-      cityForm.controls.image.touched &&
+      } @else if ((submitted || cityForm.controls.image.dirty ||
+      cityForm.controls.image.touched) &&
       cityForm.controls['image'].hasError('required')) {
       <small class="add-city-form__error">Введите ссылку</small>
       }
