@@ -13,6 +13,7 @@
 	--grey-light: #d3d4db;
 	--grey-super-light: #f2f5fa;
 	--celadon: #21a5b9;
+	--yellow: rgb(221, 188, 40);
 
 	--text-primary: var(--grey-dark);
 	--text-secondary: var(--grey);

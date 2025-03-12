@@ -7,7 +7,7 @@ import { Component, EventEmitter, Input, Output } from '@angular/core';
 	styleUrl: './favorite-checkbox.component.css',
 })
 export class FavoriteCheckboxComponent {
-  @Input() checked = false;
+  @Input({required: true}) checked = false;
 
   @Output() checkedChange = new EventEmitter<boolean>();
 
