@@ -1,46 +1,46 @@
 .cities-list__item {
-  padding: 1.25rem 0;
-  border-top: 1px solid var(--border-color);
-  display: flex;
-  align-items: center;
-  gap: 1.75rem;
+	padding: 1.25rem 0;
+	border-top: 1px solid var(--border-color);
+	display: flex;
+	align-items: center;
+	gap: 1.75rem;
 }
 
 .cities-list__item:last-child {
-  border-bottom: 1px solid var(--border-color);
+	border-bottom: 1px solid var(--border-color);
 }
 
 .cities-list__item-image {
-  border-radius: 0.5rem;
-  object-fit: cover;
+	border-radius: 0.5rem;
+	object-fit: cover;
 }
 
 .cities-list__item-content {
-  display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
-  overflow: hidden;
+	display: flex;
+	flex-direction: column;
+	gap: 0.5rem;
+	overflow: hidden;
 }
 
 .cities-list__item-title {
-  font-size: 1rem;
-  color: var(--text-primary);
-  font-weight: 500;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
+	font-size: 1rem;
+	color: var(--text-primary);
+	font-weight: 500;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
 }
 
 .cities-list__item-header {
-  display: flex;
-  gap: 0.5rem;
-  align-items: center;
+	display: flex;
+	gap: 0.5rem;
+	align-items: center;
 }
 
 .cities-list__item-description {
-  color: var(--text-secondary);
-  font-size: 0.875rem;
-  font-weight: 400;
-  overflow: hidden;
-  text-overflow: ellipsis;
+	color: var(--text-secondary);
+	font-size: 0.875rem;
+	font-weight: 400;
+	overflow: hidden;
+	text-overflow: ellipsis;
 }

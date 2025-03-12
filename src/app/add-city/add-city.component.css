@@ -1,81 +1,81 @@
 .app-header {
-  background-color: var(--grey-super-light);
-  padding: 2.5rem var(--padding-x);
+	background-color: var(--grey-super-light);
+	padding: 2.5rem var(--padding-x);
 }
 
 .app-header__title {
-  font-size: 1.75rem;
-  color: var(--text-primary);
-  font-weight: 500;
+	font-size: 1.75rem;
+	color: var(--text-primary);
+	font-weight: 500;
 }
 
 .main-content__back-link {
-  font-size: 0.8125rem;
-  font-weight: 400;
-  color: var(--text-primary);
-  padding: 0.5rem 1rem;
-  border: 1px solid var(--border-color);
-  border-radius: 2px;
-  display: flex;
-  align-items: center;
-  gap: 0.75rem;
+	font-size: 0.8125rem;
+	font-weight: 400;
+	color: var(--text-primary);
+	padding: 0.5rem 1rem;
+	border: 1px solid var(--border-color);
+	border-radius: 2px;
+	display: flex;
+	align-items: center;
+	gap: 0.75rem;
 }
 
 .app-main {
-  padding: 2.25rem var(--padding-x);
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 1.75rem;
+	padding: 2.25rem var(--padding-x);
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	gap: 1.75rem;
 }
 
 .add-city-form {
-  max-width: 534px;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 1.25rem;
+	max-width: 534px;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	gap: 1.25rem;
 }
 
 .add-city-form__field {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  gap: 0.25rem;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	gap: 0.25rem;
 }
 
 .add-city-form__label {
-  font-size: 0.875rem;
+	font-size: 0.875rem;
 }
 
 .add-city-form__input {
-  padding: 0.5rem;
-  border-radius: 2px;
-  border: 1px solid var(--border-color);
-  font-family: var(--font-family);
-  color: var(--text-primary);
+	padding: 0.5rem;
+	border-radius: 2px;
+	border: 1px solid var(--border-color);
+	font-family: var(--font-family);
+	color: var(--text-primary);
 }
 
 .add-city-form__submit-button {
-  color: white;
-  background-color: var(--celadon);
-  border-radius: 2px;
-  padding: 0.5rem 1rem;
-  border: none;
-  font-weight: 500;
-  font-size: 0.875rem;
-  transition: all 0.15s ease-in-out;
+	color: white;
+	background-color: var(--celadon);
+	border-radius: 2px;
+	padding: 0.5rem 1rem;
+	border: none;
+	font-weight: 500;
+	font-size: 0.875rem;
+	transition: all 0.15s ease-in-out;
 
-  &:hover {
-    background-color: #45bcce;
-  }
+	&:hover {
+		background-color: #45bcce;
+	}
 
-  &:disabled {
-    background-color: var(--grey-light);
-  }
+	&:disabled {
+		background-color: var(--grey-light);
+	}
 }
 
 .add-city-form__error {
-  color: #e57373;
+	color: #e57373;
 }

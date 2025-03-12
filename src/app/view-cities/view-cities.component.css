@@ -1,25 +1,25 @@
 .app-main {
-  padding: 0 var(--padding-x);
+	padding: 0 var(--padding-x);
 }
 
 .app-main__header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 2.25rem 0 1rem;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 2.25rem 0 1rem;
 }
 
 .app-main__add-link {
-  color: white;
-  background-color: var(--celadon);
-  border-radius: 4px;
-  padding: 0.5rem 1rem;
-  border: none;
-  font-weight: 500;
-  font-size: 0.875rem;
-  transition: all 0.15s ease-in-out;
+	color: white;
+	background-color: var(--celadon);
+	border-radius: 4px;
+	padding: 0.5rem 1rem;
+	border: none;
+	font-weight: 500;
+	font-size: 0.875rem;
+	transition: all 0.15s ease-in-out;
 
-  &:hover {
-    background-color: #45bcce;
-  }
+	&:hover {
+		background-color: #45bcce;
+	}
 }
